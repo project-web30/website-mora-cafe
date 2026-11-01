@@ -1,0 +1,12 @@
+/* Registrasi, masuk, edit profil, ubah sandi, logout (data disimpan di localStorage) */
+(()=>{const us=()=>U(),sv=u=>localStorage.setItem('mora_users',JSON.stringify(u)),show=()=>{const m=ME();$('#auth').hidden=!!m;$('#acc').hidden=!m;if(!m)return;$('#pa').textContent=m.avatar;$('#pn').textContent=m.nama;$('#pe').textContent=m.email+' · '+m.telp;
+['n:nama','a:alamat','t:tempat','l:lahir','h:telp'].forEach(x=>{const[k,f]=x.split(':');$('#x'+k).value=m[f]});$('#xj').value=m.jk},
+tab=d=>{$('#fl').hidden=d;$('#fd').hidden=!d},av={d:'🎓',x:''};
+$('#tl').onclick=()=>tab(0);$('#td').onclick=()=>tab(1);if(location.hash=='#daftar')tab(1);
+document.addEventListener('click',e=>{const b=e.target.closest('.av');if(!b)return;const f=b.closest('form').id[1];av[f]=b.dataset.av;b.closest('div').querySelectorAll('.av').forEach(x=>x.classList.toggle('bg-secondary-container',x==b))});
+$('#fd').onsubmit=e=>{e.preventDefault();const em=$('#de').value.trim().toLowerCase(),u=us();if(!/@gmail\.com$/.test(em))return $('#ed').textContent='Gunakan email Gmail (@gmail.com).';if($('#dp').value.length<6)return $('#ed').textContent='Kata sandi minimal 6 karakter.';if(u[em])return $('#ed').textContent='Email sudah terdaftar. Silakan masuk.';
+if(!$('#dj').value)return $('#ed').textContent='Pilih jenis kelamin.';u[em]={email:em,pass:$('#dp').value,nama:$('#dn').value,avatar:av.d,alamat:$('#da').value,tempat:$('#dt').value,lahir:$('#dl').value,jk:$('#dj').value,telp:$('#dh').value};sv(u);localStorage.setItem('mora_session',em);toast('Akun berhasil dibuat');show()};
+$('#fl').onsubmit=e=>{e.preventDefault();const u=us()[$('#le').value.trim().toLowerCase()];if(!u||u.pass!=$('#lp').value)return $('#el').textContent='Email atau kata sandi salah.';localStorage.setItem('mora_session',u.email);show()};
+$('#fe').onsubmit=e=>{e.preventDefault();const u=us(),m=u[SES()];Object.assign(m,{nama:$('#xn').value,alamat:$('#xa').value,tempat:$('#xt').value,lahir:$('#xl').value,telp:$('#xh').value,jk:$('#xj').value});if(av.x)m.avatar=av.x;sv(u);toast('Profil diperbarui');show()};
+$('#fp').onsubmit=e=>{e.preventDefault();const u=us(),m=u[SES()];if(m.pass!=$('#po').value)return toast('Kata sandi lama salah');if($('#pw').value.length<6)return toast('Sandi baru minimal 6 karakter');m.pass=$('#pw').value;sv(u);e.target.reset();toast('Kata sandi diubah')};
+$('#lo').onclick=()=>{localStorage.removeItem('mora_session');toast('Anda sudah keluar');setTimeout(()=>location.href='index.html',700)};show()})();
