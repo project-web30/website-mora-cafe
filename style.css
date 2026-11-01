@@ -1,0 +1,23 @@
+/* Gaya dasar MŌRA Caféé (Tailwind dimuat lewat CDN, token di js/tailwind.config.js) */
+@layer base {
+  html, body {
+  margin: 0; padding: 0; } body {
+  overscroll-behavior: none; } main > :first-child {
+  margin-top: 0 !important; } main > :last-child {
+  margin-bottom: 0 !important; }
+}
+::-webkit-scrollbar {
+  display: none; }
+
+/* Mode gelap sederhana */
+html.dark{filter:invert(1) hue-rotate(180deg)}
+html.dark img,html.dark iframe{filter:invert(1) hue-rotate(180deg)}
+
+/* Toast */
+.mora-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:99;background:#fdb244;color:#12301f;border:1px solid #12301f;box-shadow:3px 3px 0 #12301f;padding:10px 18px;border-radius:999px;font:600 12px "JetBrains Mono",monospace}
+
+/* Carousel testimoni (Apa kata sahabat MŌRA?) */
+#tr{display:flex;gap:1.5rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+#tr::-webkit-scrollbar{display:none}
+#tr>figure{flex:0 0 88%;scroll-snap-align:start}
+@media(min-width:768px){#tr>figure{flex-basis:calc((100% - 3rem)/3)}}
