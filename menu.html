@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — MŌRA Caféé</title>
+<link rel="icon" href="assets/logo.png">
+<link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind.config.js"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-primary min-h-screen flex flex-col" data-page="menu">
+<div id="site-header"></div>
+<main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Editorial Header & Atmosphere -->
+<section class="w-full max-w-6xl mx-auto px-space-md lg:px-space-lg pt-space-xl pb-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg pb-space-lg border-b border-primary/15">
+<div class="space-y-space-sm max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code text-label-code text-secondary tracking-widest uppercase">01 — KATALOG SEDUHAN &amp; RACIKAN</span>
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-code text-[11px] text-on-surface-variant uppercase">EDISI SEMESTER GANJIL</span>
+</div>
+<h1 class="font-display text-display text-primary tracking-tight font-semibold">
+          MENU PILIHAN MŌRA
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Tiga racikan andalan, sisanya tinggal pilih mood-mu. Diseduh segar dengan bahan lokal pilihan dari kebun mitra nusantara.
+        </p>
+</div>
+<div class="flex flex-col items-start md:items-end gap-2 shrink-0">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container border border-outline-variant/70 shadow-[2px_2px_0px_#12301f]">
+<span class="material-symbols-outlined text-[16px] text-primary">school</span>
+<span class="font-label-code text-[11px] text-primary font-bold uppercase tracking-wider">
+            HARGA RAMAH MAHASISWA · SUDAH TERMASUK PPN
+          </span>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">
+          PENGIRIMAN &amp; TAKEAWAY DIBUKA SAMPAI 22:30 WIB
+        </span>
+</div>
+</div>
+<!-- Editorial Filter Controls & Interactive Sliders -->
+<div class="mt-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<!-- Category Pills -->
+<div class="lg:col-span-7 flex flex-wrap items-center gap-2">
+<button class="category-pill px-4 py-2 rounded-full font-label-code text-label-code font-semibold tracking-wide transition-all bg-primary-container text-on-primary shadow-[2px_2px_0px_#835400]" type="button">
+          Semua (18)
+        </button>
+<button class="category-pill px-4 py-2 rounded-full font-label-code text-label-code font-semibold tracking-wide transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface border border-outline-variant hover:border-primary" type="button">
+          Coffee (5)
+        </button>
+<button class="category-pill px-4 py-2 rounded-full font-label-code text-label-code font-semibold tracking-wide transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface border border-outline-variant hover:border-primary" type="button">
+          Fruit Blends (4)
+        </button>
+<button class="category-pill px-4 py-2 rounded-full font-label-code text-label-code font-semibold tracking-wide transition-all bg-secondary text-on-secondary shadow-[2px_2px_0px_#12301f]" type="button">
+          Cheese Tea (3)
+        </button>
+<button class="category-pill px-4 py-2 rounded-full font-label-code text-label-code font-semibold tracking-wide transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface border border-outline-variant hover:border-primary" type="button">
+          Non-Coffee (4)
+        </button>
+<button class="category-pill px-4 py-2 rounded-full font-label-code text-label-code font-semibold tracking-wide transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface border border-outline-variant hover:border-primary" type="button">
+          Seasonal (2)
+        </button>
+</div>
+<!-- Search & Sweetness Slider Control -->
+<div class="lg:col-span-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm justify-end">
+<div class="relative flex-1">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3.5 top-1/2 -translate-y-1/2">search</span>
+<input class="w-full bg-surface-container-lowest border border-primary/20 rounded pl-10 pr-3 py-2 text-body-sm font-body-sm text-on-surface focus:outline-none focus:border-primary focus:shadow-[2px_2px_0px_#12301f] transition-all" placeholder="Cari nama atau rasa..." type="text">
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded border border-outline-variant/80">
+<span class="font-label-code text-[11px] text-on-surface-variant uppercase tracking-wider shrink-0">Manis:</span>
+<div class="flex items-center gap-1.5 font-label-code text-[11px]">
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" type="button">0%</button>
+<span class="text-outline-variant">/</span>
+<button class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-bold" type="button">50%</button>
+<span class="text-outline-variant">/</span>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" type="button">100%</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Master Catalog Index (Row-Based) -->
+<section class="w-full max-w-6xl mx-auto px-space-md lg:px-space-lg pb-32">
+<div class="border-t border-primary/20 flex flex-col">
+<!-- ITEM 01: Mōra Ice Latte -->
+<article class="group relative py-space-lg border-b border-outline-variant/70 hover:bg-surface-container-low/50 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-semibold shrink-0 pt-1">01</span>
+<div class="space-y-1.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold group-hover:text-secondary transition-colors">
+                  Mōra Ice Latte
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                  [Kopi Susu Signature]
+                </span>
+<span class="inline-block transform -rotate-1 px-2.5 py-0.5 rounded text-on-primary bg-primary-container border border-primary font-label-code text-[10px] font-bold tracking-wider shadow-[2px_2px_0px_#835400]">
+                  FAVORIT MAHASISWA
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate max-w-2xl">
+                Keseimbangan espresso manis gurih dengan tekstur creamy susu nabati dingin, disajikan tanpa ampas.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface-variant">
+                  Espresso House Blend · Creamy Oat Milk
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0 pt-2 lg:pt-0">
+<!-- Hidden thumbnail preview on desktop hover -->
+<div class="hidden xl:block w-14 h-14 rounded overflow-hidden border border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+<img alt="Mōra Ice Latte" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUaM-2L6o9NEJLjRemTbFDemj4T_xC4qMZSctHcf6_JUrkpVSnf9vWmqQ3-LX38m3tNeUlf9CntwgUkNKk40qmf-gHp6f8NguHmVSvTiSZcOLm1WHZJ3blmFjqfTcKj2b8VMYB7tFwiP88R7LR2tw8JJ2-G1IcR5i0ZQMPUt17Y8uy7_OocZKhAd5b7dl3o3Y_lHz8n2_OoPcGVjbga-E7N9RIpUIiJjceav-xoQte">
+</div>
+<div class="text-right">
+<span class="font-price-tag text-headline-sm text-primary font-bold tracking-tight">Rp 22.000</span>
+<span class="block font-label-code text-[10px] text-on-surface-variant">REGULAR SIZE</span>
+</div>
+<button aria-label="Tambah Mōra Ice Latte" class="w-11 h-11 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-[2px_2px_0px_#12301f]" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 02: Mōra Mango Cheese (EXPANDED EDITORIAL ROW ARCHITECTURE) -->
+<article class="relative py-space-lg border-b-2 border-primary bg-surface-container-low/90 -mx-space-sm sm:-mx-space-md lg:-mx-space-lg px-space-sm sm:px-space-md lg:px-space-lg shadow-[4px_4px_0px_#12301f] transition-all">
+<!-- Main Bar Header Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md border-b border-primary/15">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-bold shrink-0 pt-1">02</span>
+<div class="space-y-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-bold">
+                  Mōra Mango Cheese
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-secondary bg-secondary-fixed px-2 py-0.5 rounded font-semibold">
+                  [Fruity Favorite]
+                </span>
+<span class="inline-block transform rotate-2 px-2.5 py-0.5 rounded text-on-secondary-container bg-secondary-container border border-primary font-label-code text-[10px] font-bold tracking-wider shadow-[2px_2px_0px_#12301f]">
+                  BEST SELLER
+                </span>
+<span class="font-label-code text-[11px] text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                  SEDANG TERBUKA
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Mangga Gedong Gincu · Sea Salt Cream
+              </p>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0">
+<div class="text-right">
+<span class="font-price-tag text-headline-md text-primary font-bold">Rp 25.000</span>
+<span class="block font-label-code text-[10px] text-secondary uppercase font-semibold">Racikan Unggulan</span>
+</div>
+<button aria-label="Tutup Detail" class="w-11 h-11 rounded-full bg-primary-container text-on-primary border border-primary flex items-center justify-center hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">expand_less</span>
+</button>
+</div>
+</div>
+<!-- Expanded Architectural Content Pane -->
+<div class="pt-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Visual Block -->
+<div class="lg:col-span-5 space-y-space-sm">
+<div class="relative w-full aspect-square rounded overflow-hidden border border-primary shadow-[4px_4px_0px_#12301f] bg-primary-container">
+<img alt="Mōra Mango Cheese Tea" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Wpg_gA4FSU7hH4-Jdq7pT2wR6nOAlG_ze_Z6OYXQq238zIZpwnuWHNzVsY1BYv2QeyDrXqEG8_OKxT__k0yc_S05xQm89hciOqcmuwrFj8xA7cPSyMubdhcgvIVCDC_DQSCPtQu1p2L6lJffM7hB0D3oyvtLIknnGdx3kXvgwX2XTJz85NSkD08CYwRlPdcAoAIH6tc3EUd0z7Lyhyagj3cLWiPi7X-TqDiog3jtEA3Q">
+<div class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container px-3 py-1 rounded font-price-tag text-price-tag font-bold border border-primary shadow-[2px_2px_0px_#12301f]">
+                Rp 25.000
+              </div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1 rounded border border-outline-variant font-label-code text-[10px] text-primary">
+                FOTO ASLI PENYAJIAN
+              </div>
+</div>
+<div class="flex items-center justify-between p-3 rounded bg-surface border border-outline-variant/60 font-label-code text-[11px] text-on-surface-variant">
+<span class="">SUHU: DINGIN DENGAN ES</span>
+<span class="">TAKARAN: 360 ML</span>
+<span class="">KAFEIN: RENDAH (TEH HIJAU)</span>
+</div>
+</div>
+<!-- Right Customization & Narrative -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="space-y-2">
+<span class="font-label-code text-[11px] text-secondary uppercase tracking-widest font-semibold">
+                  CATATAN SEDUHAN BARISTA
+                </span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                  Perpaduan puree mangga harum manis lokal yang dimasak perlahan setiap subuh, dipadukan teh melati dingin segar dan diselimuti lapisan tebal keju sea salt gurih buatan tangan. Sensasi creamy, asam, dan manis menyatu sempurna.
+                </p>
+</div>
+<!-- Size Segmented Control -->
+<div class="space-y-2 pt-2">
+<span class="font-label-code text-label-code text-primary font-bold uppercase tracking-wider block">
+                  1. PILIH UKURAN GELAS
+                </span>
+<div class="grid grid-cols-3 gap-2">
+<button class="p-3 rounded bg-primary-container text-on-primary border border-primary text-left shadow-[2px_2px_0px_#835400] transition-all" type="button">
+<span class="block font-label-code text-[11px] text-secondary-container font-semibold uppercase">Regular</span>
+<span class="font-body-sm font-semibold">Cup S (12oz)</span>
+<span class="block font-price-tag text-[12px] mt-1 text-on-primary/80">+Rp 0</span>
+</button>
+<button class="p-3 rounded bg-surface border border-outline-variant text-left hover:border-primary transition-all" type="button">
+<span class="block font-label-code text-[11px] text-on-surface-variant font-semibold uppercase">Large</span>
+<span class="font-body-sm font-semibold text-on-surface">Cup M (16oz)</span>
+<span class="block font-price-tag text-[12px] mt-1 text-secondary font-bold">+Rp 4.000</span>
+</button>
+<button class="p-3 rounded bg-surface border border-outline-variant text-left hover:border-primary transition-all" type="button">
+<span class="block font-label-code text-[11px] text-on-surface-variant font-semibold uppercase">Jumbo</span>
+<span class="font-body-sm font-semibold text-on-surface">Cup L (22oz)</span>
+<span class="block font-price-tag text-[12px] mt-1 text-secondary font-bold">+Rp 8.000</span>
+</button>
+</div>
+</div>
+<!-- Interactive Sweetness Selector -->
+<div class="space-y-2 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-primary font-bold uppercase tracking-wider">
+                    2. TINGKAT KEMANISAN (GULA TEBU ORGANIK)
+                  </span>
+<span class="font-label-code text-[11px] text-secondary font-bold">REKOMENDASI: 50%</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="px-3 py-2 rounded bg-surface border border-outline-variant text-center font-body-sm text-on-surface hover:border-primary" type="button">
+                    Tanpa Gula (0%)
+                  </button>
+<button class="px-3 py-2 rounded bg-primary-container text-on-primary font-semibold border border-primary text-center font-body-sm shadow-[2px_2px_0px_#835400]" type="button">
+                    Sedang (50%)
+                  </button>
+<button class="px-3 py-2 rounded bg-surface border border-outline-variant text-center font-body-sm text-on-surface hover:border-primary" type="button">
+                    Normal (100%)
+                  </button>
+</div>
+</div>
+<!-- Ice Level Selector -->
+<div class="space-y-2 pt-2">
+<span class="font-label-code text-label-code text-primary font-bold uppercase tracking-wider block">
+                  3. TAKARAN ES BATU
+                </span>
+<div class="grid grid-cols-3 gap-2">
+<button class="px-3 py-2 rounded bg-primary-container text-on-primary font-semibold border border-primary text-center font-body-sm shadow-[2px_2px_0px_#835400]" type="button">
+                    Es Standar
+                  </button>
+<button class="px-3 py-2 rounded bg-surface border border-outline-variant text-center font-body-sm text-on-surface hover:border-primary" type="button">
+                    Sedikit Es
+                  </button>
+<button class="px-3 py-2 rounded bg-surface border border-outline-variant text-center font-body-sm text-on-surface hover:border-primary" type="button">
+                    Tanpa Es
+                  </button>
+</div>
+</div>
+</div>
+<!-- Allergen Notice -->
+<div class="flex items-center gap-2 p-2.5 rounded bg-surface-container border border-outline-variant/60">
+<span class="material-symbols-outlined text-[18px] text-secondary">info</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">
+                Mengandung produk olahan susu (laktosa). Tersedia opsi susu gandum saat checkout racikan khusus.
+              </span>
+</div>
+<!-- Double Action Row -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md border-t border-primary/10">
+<button class="px-6 py-3.5 rounded-full bg-secondary-container text-on-secondary-container border border-primary font-label-code text-[12px] font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-[4px_4px_0px_#12301f] hover:-translate-y-0.5 transition-transform active:translate-y-0 active:shadow-none" type="button">
+<span class="">Tambah ke Keranjang — Rp 25.000</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<a class="font-label-code text-[11px] text-primary hover:text-secondary underline underline-offset-4 font-semibold text-center sm:text-right transition-colors" href="#">
+                Racik versi kustom di Lab Minuman →
+              </a>
+</div>
+</div>
+</div>
+</article>
+<!-- ITEM 03: Mōra Strawberry Cheese -->
+<article class="group relative py-space-lg border-b border-outline-variant/70 hover:bg-surface-container-low/50 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-semibold shrink-0 pt-1">03</span>
+<div class="space-y-1.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold group-hover:text-secondary transition-colors">
+                  Mōra Strawberry Cheese
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                  [Sweet &amp; Tart Berry]
+                </span>
+<span class="inline-block transform -rotate-2 px-2.5 py-0.5 rounded text-on-secondary-container bg-secondary-container border border-primary font-label-code text-[10px] font-bold tracking-wider shadow-[2px_2px_0px_#12301f]">
+                  BEST SELLER
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate max-w-2xl">
+                Stroberi segar Ciwidey ditumbuk kasar dengan seduhan jasmine cold brew dan mahkota foam keju asin gurih.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface-variant">
+                  Crushed Ciwidey Strawberry · Cold Tea
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0 pt-2 lg:pt-0">
+<div class="hidden xl:block w-14 h-14 rounded overflow-hidden border border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+<img alt="Mōra Strawberry Cheese" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM0TFPSdxA4JBYSFmjkmLf2yObO6W8OOu4kYlCJ8ks8S3zvx3boteqwAq_jaOO-pqSRb1jqd5SMwzTKmTJK7VCEZ-KUbVVVf8_TdeKyQcyR6Dmx0M3NaGnTf2hOFVeJsWubS9svtJrW8Kx7RSd6MwDlZG2yaaa9xzrFUJ_CyLCn16bzJU1fFXr2q5Euxe_lomKb-crFN0NwSG8UFuuA-nqv8q0-IoymHBbaCE2hrQP">
+</div>
+<div class="text-right">
+<span class="font-price-tag text-headline-sm text-primary font-bold tracking-tight">Rp 25.000</span>
+<span class="block font-label-code text-[10px] text-on-surface-variant">COLD INFUSION</span>
+</div>
+<button aria-label="Tambah Mōra Strawberry Cheese" class="w-11 h-11 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-[2px_2px_0px_#12301f]" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 04: Es Kopi Susu MŌRA -->
+<article class="group relative py-space-lg border-b border-outline-variant/70 hover:bg-surface-container-low/50 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-semibold shrink-0 pt-1">04</span>
+<div class="space-y-1.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold group-hover:text-secondary transition-colors">
+                  Es Kopi Susu MŌRA
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                  [Gula Aren Organik]
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate max-w-2xl">
+                Kopi susu harian klasik mahasiswa: bold, ramah di lambung, dan manis aren kelapa yang legit alami.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface-variant">
+                  Double Shot · Aren Cair Ciamis
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0 pt-2 lg:pt-0">
+<div class="text-right">
+<span class="font-price-tag text-headline-sm text-primary font-bold tracking-tight">Rp 20.000</span>
+<span class="block font-label-code text-[10px] text-on-surface-variant">HARGA DASAR</span>
+</div>
+<button aria-label="Tambah Es Kopi Susu MŌRA" class="w-11 h-11 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-[2px_2px_0px_#12301f]" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 05: Matcha Sea Salt Cream -->
+<article class="group relative py-space-lg border-b border-outline-variant/70 hover:bg-surface-container-low/50 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-semibold shrink-0 pt-1">05</span>
+<div class="space-y-1.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold group-hover:text-secondary transition-colors">
+                  Matcha Sea Salt Cream
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                  [Uji Ceremonial Blend]
+                </span>
+<span class="inline-block transform rotate-1 px-2.5 py-0.5 rounded text-on-tertiary bg-tertiary-container border border-primary font-label-code text-[10px] font-bold tracking-wider shadow-[2px_2px_0px_#12301f]">
+                  RACIKAN BARU
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate max-w-2xl">
+                Green tea murni dengan karakter umami vegetal mendalam, dilapisi krim keju padat gurih bercitarasa asin halus.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface-variant">
+                  Artisan Matcha · Whipped Cheese Foam
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0 pt-2 lg:pt-0">
+<div class="text-right">
+<span class="font-price-tag text-headline-sm text-primary font-bold tracking-tight">Rp 26.000</span>
+<span class="block font-label-code text-[10px] text-on-surface-variant">GRADE CEREMONIAL</span>
+</div>
+<button aria-label="Tambah Matcha Sea Salt Cream" class="w-11 h-11 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-[2px_2px_0px_#12301f]" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 06: Choco Premium Ganache -->
+<article class="group relative py-space-lg border-b border-outline-variant/70 hover:bg-surface-container-low/50 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-semibold shrink-0 pt-1">06</span>
+<div class="space-y-1.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold group-hover:text-secondary transition-colors">
+                  Choco Premium Ganache
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                  [Dark Chocolate 70%]
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate max-w-2xl">
+                Cokelat pekat Jawa Barat dengan sentuhan rempah pala lembut dan susu sapi segar pasteurisasi dingin.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface-variant">
+                  Single Origin Cacao · Fresh Milk
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0 pt-2 lg:pt-0">
+<div class="text-right">
+<span class="font-price-tag text-headline-sm text-primary font-bold tracking-tight">Rp 24.000</span>
+<span class="block font-label-code text-[10px] text-on-surface-variant">DARK ROAST</span>
+</div>
+<button aria-label="Tambah Choco Premium Ganache" class="w-11 h-11 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-[2px_2px_0px_#12301f]" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 07: Brown Sugar Boba Slow Brew -->
+<article class="group relative py-space-lg border-b border-outline-variant/70 hover:bg-surface-container-low/50 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-semibold shrink-0 pt-1">07</span>
+<div class="space-y-1.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold group-hover:text-secondary transition-colors">
+                  Brown Sugar Boba Slow Brew
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                  [Kenyal Lembut Buatan Pagi]
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate max-w-2xl">
+                Boba tapioka dimasak lambat 3 jam dengan sirup gula kelapa hangat, dipadukan susu dingin segar.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface-variant">
+                  Handmade Tapioca · Aren Syrup
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0 pt-2 lg:pt-0">
+<div class="text-right">
+<span class="font-price-tag text-headline-sm text-primary font-bold tracking-tight">Rp 25.000</span>
+<span class="block font-label-code text-[10px] text-on-surface-variant">BATCH HARIAN TERBATAS</span>
+</div>
+<button aria-label="Tambah Brown Sugar Boba" class="w-11 h-11 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-[2px_2px_0px_#12301f]" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 08: Lychee Mint Cold Tea -->
+<article class="group relative py-space-lg border-b border-outline-variant/70 hover:bg-surface-container-low/50 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-semibold shrink-0 pt-1">08</span>
+<div class="space-y-1.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold group-hover:text-secondary transition-colors">
+                  Lychee Mint Cold Tea
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                  [Pelepas Dahaga Cuaca Terik]
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate max-w-2xl">
+                Teh hitam dingin beraroma leci utuh dengan remasan daun mint segar dari kebun hidroponik atap kedai.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface-variant">
+                  Whole Lychee · Fresh Mint Leaves
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0 pt-2 lg:pt-0">
+<div class="text-right">
+<span class="font-price-tag text-headline-sm text-primary font-bold tracking-tight">Rp 21.000</span>
+<span class="block font-label-code text-[10px] text-on-surface-variant">EXTRA REFRESHING</span>
+</div>
+<button aria-label="Tambah Lychee Mint Cold Tea" class="w-11 h-11 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-[2px_2px_0px_#12301f]" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 09: Taro Velvet Cream Latte -->
+<article class="group relative py-space-lg border-b border-outline-variant/70 hover:bg-surface-container-low/50 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md lg:gap-space-lg min-w-0">
+<span class="font-label-code text-headline-sm text-secondary font-semibold shrink-0 pt-1">09</span>
+<div class="space-y-1.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold group-hover:text-secondary transition-colors">
+                  Taro Velvet Cream Latte
+                </h2>
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                  [Lembut &amp; Harum]
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate max-w-2xl">
+                Pasta ubi ungu panggang dengan aroma vanilla butter dan foam susu lembut beludru tanpa kafein.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface-variant">
+                  Roasted Purple Yam · Velvety Foam
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-lg shrink-0 pt-2 lg:pt-0">
+<div class="text-right">
+<span class="font-price-tag text-headline-sm text-primary font-bold tracking-tight">Rp 23.000</span>
+<span class="block font-label-code text-[10px] text-on-surface-variant">BEBAS KAFEIN</span>
+</div>
+<button aria-label="Tambah Taro Velvet Cream Latte" class="w-11 h-11 rounded-full bg-surface-container-lowest border border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-[2px_2px_0px_#12301f]" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Editorial Table Note / Sourcing Footer -->
+<div class="mt-space-lg p-space-md rounded bg-surface-container border border-outline-variant/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md font-label-code text-[12px] text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">eco</span>
+<span class="">SEMUA TEH DISEDUH DENGAN DAUN PUCUK PERTAMA DARI KEBUN TEH MALABAR.</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="">KODE BATCH: MR-KAT-2024</span>
+<a class="text-primary font-bold underline underline-offset-2 hover:text-secondary" href="#">UNDUH PDF KATALOG LENGKAP</a>
+</div>
+</div>
+</section>
+<!-- FLOATING ORDER SUMMARY BAR -->
+<aside class="fixed bottom-6 inset-x-0 z-40 flex items-center justify-center px-4 pointer-events-none">
+<div class="pointer-events-auto w-full max-w-2xl bg-primary-container text-on-primary p-2.5 sm:p-3 rounded-full border border-primary shadow-[4px_4px_0px_#12301f] flex items-center justify-between gap-3 backdrop-blur-sm transition-all hover:scale-[1.01]">
+<div class="flex items-center gap-3 pl-2 sm:pl-3 min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-code text-[12px] font-bold shrink-0 border border-primary shadow-[1px_1px_0px_#12301f]">
+          2
+        </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-price-tag text-body-md font-bold text-on-primary truncate">2 item dipilih · Rp 47.000</span>
+</div>
+<span class="font-label-code text-[10px] text-secondary-container tracking-wider uppercase font-semibold truncate">
+            Diskon Mahasiswa 15% Otomatis Diterapkan
+          </span>
+</div>
+</div>
+<button class="shrink-0 px-4 sm:px-6 py-2.5 rounded-full bg-secondary-container text-on-secondary-container border border-primary font-label-code text-[12px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-[2px_2px_0px_#12301f] hover:brightness-105 active:scale-95 transition-all" type="button">
+<span class="">Lihat Keranjang (2)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</aside>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/features.js"></script>
+<script src="js/pages/menu.js"></script>
+</body>
+</html>

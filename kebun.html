@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asal Bahan — MŌRA Caféé</title>
+<link rel="icon" href="assets/logo.png">
+<link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind.config.js"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-primary min-h-screen flex flex-col" data-page="asal-bahan">
+<div id="site-header"></div>
+<main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Progress Bar / Micro-Interaction Indicator -->
+<div class="sticky top-16 z-40 w-full bg-surface-container-high/80 backdrop-blur-sm">
+<div class="h-1 bg-secondary-container w-0 transition-all duration-150" id="origin-scroll-progress"></div>
+</div>
+<!-- Hero Header Section -->
+<section class="w-full max-w-7xl mx-auto px-space-md lg:px-margin-desktop pt-space-xl pb-space-lg">
+<div class="flex flex-col gap-space-md">
+<!-- Editorial Section Pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-code text-label-code shadow-[2px_2px_0px_#fdb244]">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+            04 — TRANSPARANSI &amp; RANTAI PASOK ETIS
+          </span>
+<span class="font-label-code text-[11px] text-on-surface-variant uppercase tracking-widest hidden sm:inline">
+            · DARI KEBUN KE GELAS
+          </span>
+</div>
+<!-- Verified Origin Stamp Badge (Rotated Paper Aesthetic) -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container border-0 text-primary-container shadow-[3px_3px_0px_#12301f] rotate-[-1.5deg]">
+<span class="material-symbols-outlined text-[16px] text-secondary font-bold">verified</span>
+<span class="font-label-code text-[11px] font-semibold tracking-wider uppercase text-primary">
+            100% MITRA LOKAL · DILACAK HINGGA KOORDINAT
+          </span>
+</div>
+</div>
+<!-- Main Headline & Editorial Narrative Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-end pt-space-sm">
+<div class="lg:col-span-8 space-y-space-sm">
+<span class="font-label-code text-label-code uppercase tracking-widest text-secondary block font-semibold">
+            [ARCHIVE PASUNDAN &amp; CIREBON COASTAL]
+          </span>
+<h1 class="font-display text-display text-primary leading-[1.05] tracking-tight">
+            Dari mana rasa ini berasal.
+          </h1>
+</div>
+<div class="lg:col-span-4 pb-2">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Menghubungkan kerja keras petani tanah Pasundan dan pesisir Cirebon langsung ke cangkirmu. Tanpa perantara berlebih, tanpa esensi artifisial.
+          </p>
+<div class="flex items-center gap-4 mt-space-sm font-label-code text-[11px] text-primary">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">eco</span> 4 Komoditas Utama
+            </span>
+<span class="">/</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">pin_drop</span> Jawa Barat, ID
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Coordinate Switcher / Quick Anchor Strip -->
+<section class="w-full max-w-7xl mx-auto px-space-md lg:px-margin-desktop pb-space-lg">
+<div class="p-space-sm bg-surface-container rounded-xl flex flex-wrap items-center justify-between gap-space-sm">
+<span class="font-label-code text-label-code uppercase text-on-surface-variant tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">hub</span>
+        Jalur Komoditas:
+      </span>
+<div class="flex flex-wrap items-center gap-2">
+<a class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary font-label-code text-[11px] transition-transform active:scale-95 shadow-[2px_2px_0px_#12301f]" href="#kopi">
+          01. KOPI ARABIKA
+        </a>
+<a class="px-3 py-1.5 rounded-full bg-surface text-on-surface hover:bg-surface-container-high font-label-code text-[11px] transition-transform active:scale-95" href="#mangga">
+          02. MANGGA GINCU
+        </a>
+<a class="px-3 py-1.5 rounded-full bg-surface text-on-surface hover:bg-surface-container-high font-label-code text-[11px] transition-transform active:scale-95" href="#strawberry">
+          03. STRAWBERRY CIWIDEY
+        </a>
+<a class="px-3 py-1.5 rounded-full bg-surface text-on-surface hover:bg-surface-container-high font-label-code text-[11px] transition-transform active:scale-95" href="#susu">
+          04. SUSU LEMBANG
+        </a>
+</div>
+</div>
+</section>
+<!-- MAIN EDITORIAL PROVENANCE SECTIONS (ZIG-ZAG ASYMMETRIC) -->
+<div class="w-full space-y-space-xl pb-space-xl">
+<!-- ITEM 1: KOPI ARABIKA GUNUNG TILU & KAMOJANG (Left Image, Right Narrative) -->
+<section class="w-full max-w-7xl mx-auto px-space-md lg:px-margin-desktop scroll-mt-24" id="kopi">
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-xl shadow-[4px_4px_0px_#12301f]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Image Column with Figma Annotation Pins -->
+<div class="lg:col-span-6 relative">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high aspect-[4/3] group shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up artisanal iced latte coffee layered drink inside a fluted fluted glass on dark emerald green marble table, ambient natural café window lighting, student friendly slow living sanctuary atmosphere, warm amber tones and milky crema foam detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE0qKCcFweoVbTxD85uRiiOi4M6EXcqVbQhFKBaULVlhQOxvQHFaNFNW9_454Nv5D7lnDYzqFppb0dMA_v64o7o0R_fvJlN6kFcgfncOlnx6TO29-b-khvM4o8BP7Oc6kY3xyA47b01I2q3u-EHnxyw6jPW8pyRAQf-KlWYOSMCu66pUv8nwjdWfJohLOUQnfzrLhnZOGDoBFToS8_xJpTrNKZ352IoJzMjyW8XbI4">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/40 via-transparent to-transparent pointer-events-none"></div>
+<!-- Annotation Card 1 (Figma Comment Pin Style) -->
+<div class="absolute top-5 left-5 bg-surface-container-lowest/95 backdrop-blur-sm rounded-lg p-2.5 shadow-[3px_3px_0px_#12301f] max-w-[210px] transform hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-code text-[10px] text-primary font-bold uppercase tracking-wider">Ketinggian Panen</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-tight">
+                  Dipetik merah serentak <span class="font-label-code font-bold">[Elv. 1.450 mdpl]</span> di lereng Gunung Tilu.
+                </p>
+</div>
+<!-- Annotation Card 2 (Bottom Right) -->
+<div class="absolute bottom-5 right-5 bg-surface-container-lowest/95 backdrop-blur-sm rounded-lg p-2.5 shadow-[3px_3px_0px_#12301f] max-w-[220px] transform hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-[10px] text-primary font-bold uppercase tracking-wider">Roast Profile</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-tight">
+                  Roasting lambung-friendly dengan profil medium-light beraroma gula aren.
+                </p>
+</div>
+</div>
+<!-- Coordinate Footnote -->
+<div class="flex items-center justify-between mt-space-xs px-1 text-on-surface-variant font-label-code text-[11px]">
+<span class="">LAT: -7.1492° S · LONG: 107.5489° E</span>
+<span class="">BATCH CODE: #TLU-24-HN</span>
+</div>
+</div>
+<!-- Narrative Column -->
+<div class="lg:col-span-6 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold tracking-widest uppercase">
+                  01 / KOPI ARABIKA · SINGLE ORIGIN JAWA BARAT
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-[10px] text-primary-container uppercase font-semibold">
+                  Honey Anaerob
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight mb-space-sm">
+                Aroma Karamel Alami &amp; Nada Cokelat Pekat Garut
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Dipetik selektif hanya saat buah berwarna merah marun sempurna oleh keluarga petani di Kamojang dan Tilu. Diproses dengan fermentasi madu (honey process) selama 36 jam untuk mengunci rasa manis buah asli tanpa pemanis buatan, menghasilkan seduhan jernih yang tenang dan ramah di lambung saat mendampingi jam belajarmu.
+              </p>
+</div>
+<!-- 3 Stat Blocks (DM Mono / JetBrains Mono) -->
+<div class="grid grid-cols-3 gap-space-xs sm:gap-space-sm py-space-sm bg-surface-container-low rounded-xl p-space-sm">
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-primary block leading-none">1.450</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">mdpl Ketinggian</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-secondary block leading-none">36 Jam</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Fermentasi Honey</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-primary-container block leading-none">48</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Petani Koperasi</span>
+</div>
+</div>
+<!-- Action & Menu Connection -->
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-2 font-label-code text-label-code text-primary font-bold hover:text-secondary group transition-colors">
+<span class="">Lihat menu dari bahan ini</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<span class="font-label-code text-[11px] text-on-surface-variant">Terpakai di: Es Kopi Susu MŌRA, V60 Tilu</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ITEM 2: MANGGA GEDONG GINCU CIREBON (Right Image, Left Narrative) -->
+<section class="w-full max-w-7xl mx-auto px-space-md lg:px-margin-desktop scroll-mt-24" id="mangga">
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-xl shadow-[4px_4px_0px_#12301f]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Narrative Column (Left on Desktop) -->
+<div class="lg:col-span-6 flex flex-col justify-between space-y-space-md order-2 lg:order-1">
+<div>
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold tracking-widest uppercase">
+                  02 / MANGGA GEDONG GINCU · KEBUN SEDONG CIREBON
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-[10px] text-primary-container uppercase font-semibold">
+                  Panen Pohon
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight mb-space-sm">
+                Manis Legit Tropis yang Menari Bersama Krim Keju
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Dari kebun tanah merah Sedong di Cirebon yang hangat oleh embusan angin laut Jawa. Kami tidak menggunakan botol sirup berperisa artifisial; puree mangga dimasak harian setiap pukul 05:00 WIB di dapur seduh dengan sentuhan madu hutan untuk menjaga tekstur serat lembut dan aroma semerbak khas gedong gincu.
+              </p>
+</div>
+<!-- 3 Stat Blocks -->
+<div class="grid grid-cols-3 gap-space-xs sm:gap-space-sm py-space-sm bg-surface-container-low rounded-xl p-space-sm">
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-secondary block leading-none">100%</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Buah Utuh Asli</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-primary block leading-none">0 Gram</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Sirup Sintetis</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-primary-container block leading-none">2 Hari</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Maks. Simpan Puree</span>
+</div>
+</div>
+<!-- Action & Menu Connection -->
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-2 font-label-code text-label-code text-primary font-bold hover:text-secondary group transition-colors">
+<span class="">Lihat menu dari bahan ini</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<span class="font-label-code text-[11px] text-on-surface-variant">Terpakai di: Mango Cloud Tea, Gincu Shakerato</span>
+</div>
+</div>
+<!-- Image Column with Annotations (Right on Desktop) -->
+<div class="lg:col-span-6 relative order-1 lg:order-2">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high aspect-[4/3] group shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Artisan fluted glass drink with rich golden mango puree base layer, iced tea center, and velvety white cream cheese sea salt foam topped with fresh diced mango cubes and mint leaf on green marble stone table in cozy café interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc0k31uRCm57abQIychLG-eNHZI9aVdlzlbkxNZj8qhYhTWUaJVrCx9b4KN4Af7i-_QqId3teFs4mDh9SDvLB0dnmAduHs6FLN-uAJlbYZwAvQUyFUNMNLeIwJJdlG9R7pZgZpmlXfBvMVrc5vfu10EXk0TE-bMSFzSbvCjM_HS__qqjRap7HdRITKiMUJqumzh5130P4LjcbpYqQ70XvPwl8Z1ozKiZ__tYOlvYtx">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/35 via-transparent to-transparent pointer-events-none"></div>
+<!-- Annotation Card 1 -->
+<div class="absolute top-5 right-5 bg-surface-container-lowest/95 backdrop-blur-sm rounded-lg p-2.5 shadow-[3px_3px_0px_#12301f] max-w-[210px] transform hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-code text-[10px] text-primary font-bold uppercase tracking-wider">Kematangan</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-tight">
+                  Kematangan pohon optimal menghasilkan fruktosa alami yang kental dan harum.
+                </p>
+</div>
+<!-- Annotation Card 2 -->
+<div class="absolute bottom-5 left-5 bg-surface-container-lowest/95 backdrop-blur-sm rounded-lg p-2.5 shadow-[3px_3px_0px_#12301f] max-w-[220px] transform hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-[10px] text-primary font-bold uppercase tracking-wider">Fresh Batch Puree</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-tight">
+                  Puree alami dimasak harian setiap subuh tanpa penstabil atau pewarna.
+                </p>
+</div>
+</div>
+<!-- Coordinate Footnote -->
+<div class="flex items-center justify-between mt-space-xs px-1 text-on-surface-variant font-label-code text-[11px]">
+<span class="">LAT: -6.8521° S · LONG: 108.5714° E</span>
+<span class="">BATCH CODE: #GNC-CRB-88</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ITEM 3: STRAWBERRY MERAH CIWIDEY (Left Image, Right Narrative) -->
+<section class="w-full max-w-7xl mx-auto px-space-md lg:px-margin-desktop scroll-mt-24" id="strawberry">
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-xl shadow-[4px_4px_0px_#12301f]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Image Column with Annotations -->
+<div class="lg:col-span-6 relative">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high aspect-[4/3] group shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Artisanal layered cold strawberry iced tea beverage in ribbed fluted glass with crushed fresh ruby red strawberries at the bottom, crisp iced tea, thick cloud cream foam, strawberry slice and gold straw garnish on mossy green slate table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG6aNF_CDpT3HyN3yqEoSsoNJJuMnRTvpOTf4eM2n-sXhg021wF6i0XPZkmX-rYlMlRjQet_iP-5JcsMhtiz5TRqozMW_jHP0r1eFQC4f_274Kwwt8IXyPL_Ox5wfFkhVeP4DFOp1Yy-x3Hp1b8HgEahMtOhaHyow28Ys0BT32h0Ibzs_4jH0ZFWwc-_emJTPDZvYu3BGHIuRPYUCkdon6WR0l1l922xiKfFFp8usY">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/35 via-transparent to-transparent pointer-events-none"></div>
+<!-- Annotation Card 1 -->
+<div class="absolute top-5 left-5 bg-surface-container-lowest/95 backdrop-blur-sm rounded-lg p-2.5 shadow-[3px_3px_0px_#12301f] max-w-[210px] transform hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-code text-[10px] text-primary font-bold uppercase tracking-wider">Waktu Petik</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-tight">
+                  Dipetik pagi saat embun masih menempel untuk menjaga keasaman berry segar.
+                </p>
+</div>
+<!-- Annotation Card 2 -->
+<div class="absolute bottom-5 right-5 bg-surface-container-lowest/95 backdrop-blur-sm rounded-lg p-2.5 shadow-[3px_3px_0px_#12301f] max-w-[210px] transform hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-[10px] text-primary font-bold uppercase tracking-wider">Tekstur Crushed</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-tight">
+                  Dihancurkan manual agar bulir stroberi tetap meletup di setiap seruputan.
+                </p>
+</div>
+</div>
+<!-- Coordinate Footnote -->
+<div class="flex items-center justify-between mt-space-xs px-1 text-on-surface-variant font-label-code text-[11px]">
+<span class="">LAT: -7.1352° S · LONG: 107.3916° E</span>
+<span class="">BATCH CODE: #CWD-STR-04</span>
+</div>
+</div>
+<!-- Narrative Column -->
+<div class="lg:col-span-6 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold tracking-widest uppercase">
+                  03 / STRAWBERRY MERAH · DATARAN TINGGI CIWIDEY
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-[10px] text-primary-container uppercase font-semibold">
+                  Grade A Handpicked
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight mb-space-sm">
+                Kesegaran Asam Alami Penembus Pekatnya Kafein
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Tumbuh subur di udara sejuk 16°C kaki Gunung Patuha. Kami mengambil langsung setiap 2 hari sekali dari kelompok kebun wanita Ciwidey. Buah dihancurkan kasar dengan sendok tembaga tanpa blender kecepatan tinggi agar serat dan kesegaran rasa asam-manisnya tetap hidup berdampingan dengan cold brew atau teh melati kami.
+              </p>
+</div>
+<!-- 3 Stat Blocks -->
+<div class="grid grid-cols-3 gap-space-xs sm:gap-space-sm py-space-sm bg-surface-container-low rounded-xl p-space-sm">
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-tertiary block leading-none">16°C</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Suhu Kebun Harian</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-primary block leading-none">4 Jam</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Petik ke Dapur</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-secondary block leading-none">Grade A</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Seleksi Tangan</span>
+</div>
+</div>
+<!-- Action & Menu Connection -->
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-2 font-label-code text-label-code text-primary font-bold hover:text-secondary group transition-colors">
+<span class="">Lihat menu dari bahan ini</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<span class="font-label-code text-[11px] text-on-surface-variant">Terpakai di: Ciwidey Berry Foam Tea, Strawberry Cold Brew</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ITEM 4: SUSU SAPI SEGAR MURNI LEMBANG (Right Image, Left Narrative) -->
+<section class="w-full max-w-7xl mx-auto px-space-md lg:px-margin-desktop scroll-mt-24" id="susu">
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-xl shadow-[4px_4px_0px_#12301f]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Narrative Column (Left on Desktop) -->
+<div class="lg:col-span-6 flex flex-col justify-between space-y-space-md order-2 lg:order-1">
+<div>
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="font-label-code text-label-code text-secondary font-bold tracking-widest uppercase">
+                  04 / SUSU SAPI SEGAR · PETERNAKAN HIJAU LEMBANG
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-[10px] text-primary-container uppercase font-semibold">
+                  Grass-Fed Lembang
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight mb-space-sm">
+                Rasa Gurih Alami Penjaga Kelembutan Sea Salt Foam
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Dipasok setiap pagi sebelum kabut Lembang terangkat dari peternakan sapi perah keluarga dengan pakan rumput gajah alami. Melalui pasteurisasi suhu rendah (LTLT 72°C) yang mempertahankan protein asli dan rasa manis laktosa alami, menciptakan micro-foam elastis sempurna untuk latte art serta krim keju signature MŌRA yang gurih seimbang.
+              </p>
+</div>
+<!-- 3 Stat Blocks -->
+<div class="grid grid-cols-3 gap-space-xs sm:gap-space-sm py-space-sm bg-surface-container-low rounded-xl p-space-sm">
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-primary block leading-none">72°C</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Pasteurisasi Rendah</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-secondary block leading-none">3.8%</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Lemak Alami Utuh</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-code text-[22px] sm:text-[26px] font-bold text-primary-container block leading-none">12 Jam</span>
+<span class="font-label-code text-[10px] uppercase tracking-wider text-on-surface-variant block">Waktu Dari Perahan</span>
+</div>
+</div>
+<!-- Action & Menu Connection -->
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-2 font-label-code text-label-code text-primary font-bold hover:text-secondary group transition-colors">
+<span class="">Lihat menu dari bahan ini</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<span class="font-label-code text-[11px] text-on-surface-variant">Terpakai di: Flat White MŌRA, Signature Cheese Foam</span>
+</div>
+</div>
+<!-- Image Column with Annotations (Right on Desktop) -->
+<div class="lg:col-span-6 relative order-1 lg:order-2">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high aspect-[4/3] group shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Traditional glass mug filled with rich cold brew iced coffee and heavy marbled cream milk layer, with glass straw and wooden serving board on rustic wooden café table, warm morning lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC38EohOzLkRmee6Wm-WJwUy9I0rxD2DjKj4UFgqDLgIYzlkShrxTnXXe03IiPXAMwxIvOdaDsU0HDnIxq0iYJthow0zoL9scBEVIII59KNqiUp6YytCW2DjCJqL8mI2inFLsAVRKkj18PylZF5FNBKWBLu6DCn_M59rTH2lYxhCYkJJ9hdMo2xssEeliLV2loANFX04L7aba9hsMnrg12PTjhX03B32RX4kmx_vYt5">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/35 via-transparent to-transparent pointer-events-none"></div>
+<!-- Annotation Card 1 -->
+<div class="absolute top-5 right-5 bg-surface-container-lowest/95 backdrop-blur-sm rounded-lg p-2.5 shadow-[3px_3px_0px_#12301f] max-w-[210px] transform hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-code text-[10px] text-primary font-bold uppercase tracking-wider">Kandungan Lemak</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-tight">
+                  Tanpa skim kimiawi, tekstur krimi murni 3.8% lemak susu grass-fed.
+                </p>
+</div>
+<!-- Annotation Card 2 -->
+<div class="absolute bottom-5 left-5 bg-surface-container-lowest/95 backdrop-blur-sm rounded-lg p-2.5 shadow-[3px_3px_0px_#12301f] max-w-[210px] transform hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-[10px] text-primary font-bold uppercase tracking-wider">Suhu Pasteurisasi</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-tight">
+                  72°C gentle heating menjaga enzim baik dan rasa manis lembut alami.
+                </p>
+</div>
+</div>
+<!-- Coordinate Footnote -->
+<div class="flex items-center justify-between mt-space-xs px-1 text-on-surface-variant font-label-code text-[11px]">
+<span class="">LAT: -6.8124° S · LONG: 107.6186° E</span>
+<span class="">BATCH CODE: #LMB-MLK-92</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- PROCESS FLOWCHAIN (HORIZONTAL EDITORIAL PIPELINE) -->
+<section class="w-full max-w-7xl mx-auto px-space-md lg:px-margin-desktop py-space-xl">
+<div class="bg-surface-container p-space-md lg:p-space-xl rounded-xl space-y-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-sm">
+<div class="space-y-1">
+<span class="font-label-code text-label-code text-secondary font-bold tracking-widest uppercase">
+            05 / ALUR KONTROL MUTU
+          </span>
+<h3 class="font-headline-md text-headline-md text-primary">
+            Bagaimana bahan sampai ke mejamu
+          </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Empat tahapan tanpa kompromi untuk memastikan setiap gelas mencerminkan rasa asli tanah perkebunan dan ketelitian seduh.
+        </p>
+</div>
+<!-- 4-Step Chain Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Step 1 -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-xl space-y-space-sm shadow-[2px_2px_0px_#12301f]">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-code text-[12px] flex items-center justify-center font-bold">
+              01
+            </span>
+<span class="material-symbols-outlined text-[20px] text-secondary">handshake</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Pilih Bahan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Seleksi kurasi langsung bersama kelompok tani lokal setiap masa panen, menjamin transparansi harga wajar (fair pay).
+            </p>
+</div>
+<div class="pt-2 font-label-code text-[10px] text-secondary uppercase font-semibold">
+            [UJI KADAR GULA &amp; PETIK MERAH]
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-xl space-y-space-sm shadow-[2px_2px_0px_#12301f]">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-code text-[12px] flex items-center justify-center font-bold">
+              02
+            </span>
+<span class="material-symbols-outlined text-[20px] text-secondary">skillet</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Olah Murni</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Dicuci higienis, dimasak suhu rendah harian, atau disangrai artisan di lab dapur kami tanpa tambahan pewarna.
+            </p>
+</div>
+<div class="pt-2 font-label-code text-[10px] text-secondary uppercase font-semibold">
+            [SLOW-COOKED 05:00 WIB]
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-xl space-y-space-sm shadow-[2px_2px_0px_#12301f]">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-code text-[12px] flex items-center justify-center font-bold">
+              03
+            </span>
+<span class="material-symbols-outlined text-[20px] text-secondary">science</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Racik Presisi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Ditakar gramasi rasio 1:15 presisi oleh barista bersertifikasi tanpa perisa sintetis demi cita rasa yang berulang sempurna.
+            </p>
+</div>
+<div class="pt-2 font-label-code text-[10px] text-secondary uppercase font-semibold">
+            [AKURASI TIMBANGAN ±0.1G]
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-xl space-y-space-sm shadow-[2px_2px_0px_#12301f]">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-code text-[12px] flex items-center justify-center font-bold">
+              04
+            </span>
+<span class="material-symbols-outlined text-[20px] text-secondary">local_cafe</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Sajikan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Dituang ke dalam gelas ribbed tebal ramah lingkungan dalam suhu saji optimal 4°C untuk cold sip atau 65°C untuk latte hangat.
+            </p>
+</div>
+<div class="pt-2 font-label-code text-[10px] text-secondary uppercase font-semibold">
+            [READY TO NOURISH YOUR FOCUS]
+          </div>
+</div>
+</div>
+<!-- Farm Map Visual Banner with Interactive Coordinates Marker -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">map</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">Jelajahi Peta Terbuka Perkebunan Mitra</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lihat sertifikasi panen, nama ketua kelompok tani, dan tanggal kirim terakhir.</div>
+</div>
+</div>
+<button class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-code text-[11px] font-bold uppercase transition-all shadow-[2px_2px_0px_#12301f] active:translate-x-0.5 active:translate-y-0.5">
+          Buka Peta Interaktif (GIS) →
+        </button>
+</div>
+</div>
+</section>
+<!-- CLOSING EDITORIAL CALL TO ACTION -->
+<section class="w-full max-w-7xl mx-auto px-space-md lg:px-margin-desktop pb-space-xl">
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary p-space-lg lg:p-space-xl shadow-[4px_4px_0px_#fdb244]">
+<!-- Subtle Decorative Background Pattern Accent -->
+<div class="absolute -right-12 -bottom-12 opacity-10 pointer-events-none select-none">
+<span class="font-display text-[220px] font-bold text-on-primary">MŌRA</span>
+</div>
+<div class="relative z-10 max-w-2xl space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary text-secondary-container font-label-code text-label-code">
+<span class="material-symbols-outlined text-[14px]">local_cafe</span>
+          KOMITMEN RASA &amp; INTEGRITAS
+        </div>
+<h3 class="font-headline-lg text-headline-lg leading-tight font-semibold text-surface">
+          Setiap seruput adalah cerita jerih payah tanah Jawa Timur.
+        </h3>
+<p class="font-body-md text-body-md text-surface-container-high leading-relaxed">
+          Kunjungi kedai kami di Kebayoran Baru untuk merasakan sendiri bedanya kesegaran puree asli dan seduhan single-origin segar yang dipetik penuh penghormatan pada alam.
+        </p>
+<!-- CTA Buttons adhering to Style Guidance -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<!-- Primary CTA Pill Amber Gold -->
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-secondary-container text-primary font-label-code text-label-code font-bold uppercase tracking-wider shadow-[4px_4px_0px_#001b0c] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-transform active:translate-x-0 active:translate-y-0 active:shadow-none" href="#">
+<span class="">Coba Racikannya Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Botanical Secondary Button -->
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-surface-container-low text-primary font-label-code text-label-code font-bold uppercase tracking-wider hover:bg-surface-container transition-colors shadow-[4px_4px_0px_#fdb244] active:translate-x-0.5 active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined text-[16px]">nature_people</span>
+<span class="">Kunjungi Kebun Mitra</span>
+</a>
+</div>
+<!-- Transparency Footnote -->
+<div class="pt-space-sm flex items-center gap-4 text-[11px] font-label-code text-surface-container-high">
+<span class="">*Audit rantai pasok independen 2024</span>
+<span class="">·</span>
+<span class="">Zero artificial flavour guarantee</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Client-side Interactive Reading Progress Bar -->
+
+</div></main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/features.js"></script>
+<script src="js/pages/kebun.js"></script>
+</body>
+</html>

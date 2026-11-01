@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri — MŌRA Caféé</title>
+<link rel="icon" href="assets/logo.png">
+<link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind.config.js"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-primary min-h-screen" data-page="galeri">
+<div id="site-header"></div>
+<main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<!-- SECTION 1: EDITORIAL HEADER -->
+<section class="max-w-7xl mx-auto w-full px-space-md lg:px-margin-desktop pt-space-lg lg:pt-space-xl pb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg border-b border-primary-container/15">
+<div class="max-w-3xl space-y-space-sm">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-code text-label-code uppercase tracking-widest text-secondary font-semibold">
+            09 — GALERI &amp; KOMUNITAS · RITME HARI-HARI DI GANDARIA
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg lg:text-display text-primary leading-tight font-semibold tracking-tight uppercase">
+          SETIAP SUDUT PUNYA CERITA, SETIAP TEGUKAN MENJADI KENANGAN.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Kumpulan rekaman visual dari meja nugas panjang, tawa di pelataran selasar, hingga cangkir keramik berbusa krim keju yang menemani ribuan skripsi dan percakapan kawan setia MŌRA.
+        </p>
+</div>
+<!-- VINTAGE ROUND STAMP / EDITORIAL BADGE -->
+<div class="shrink-0 flex items-center lg:justify-end">
+<div class="relative w-36 h-36 rounded-full border border-primary-container/30 bg-surface-container flex items-center justify-center p-2 shadow-[3px_3px_0px_#12301f] transition-transform hover:rotate-6 duration-300">
+<svg class="absolute inset-0 w-full h-full animate-[spin_24s_linear_infinite]" viewBox="0 0 100 100">
+<path d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" id="circleTextPath"></path>
+<text class="font-label-code text-[7.5px] uppercase tracking-[0.22em] fill-primary font-semibold">
+<textPath href="#circleTextPath" startOffset="0%">
+                KURASI VISUAL KAWAN MŌRA · EDISI BULANAN ·
+              </textPath>
+</text>
+</svg>
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary flex flex-col items-center justify-center text-center p-1 border border-outline-variant/40">
+<span class="font-label-code text-[10px] tracking-widest text-secondary-container">VOL.04</span>
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: CATEGORY FILTER PILLS & COUNTER -->
+<div class="pt-space-md pb-space-sm flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-2" id="filterPillsContainer">
+<button class="px-4 py-2 rounded-full font-label-code text-label-code bg-primary-container text-on-primary border border-primary-container shadow-[2px_2px_0px_#835400] transition-all hover:-translate-y-0.5" data-filter="all">
+          Semua (48)
+        </button>
+<button class="px-4 py-2 rounded-full font-label-code text-label-code bg-surface-container-lowest text-on-surface-variant border border-primary-container/20 hover:text-primary hover:border-primary-container transition-all hover:-translate-y-0.5" data-filter="drinks">
+          Minuman (22)
+        </button>
+<button class="px-4 py-2 rounded-full font-label-code text-label-code bg-surface-container-lowest text-on-surface-variant border border-primary-container/20 hover:text-primary hover:border-primary-container transition-all hover:-translate-y-0.5" data-filter="space">
+          Suasana &amp; Sudut (14)
+        </button>
+<button class="px-4 py-2 rounded-full font-label-code text-label-code bg-surface-container-lowest text-on-surface-variant border border-primary-container/20 hover:text-primary hover:border-primary-container transition-all hover:-translate-y-0.5" data-filter="community">
+          Pelanggan &amp; Nugas (12)
+        </button>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-code text-[11px] tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">MENAMPILKAN 6 MIKRO-CERITA PILIHAN</span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: ASYMMETRIC EDITORIAL MASONRY GALLERY -->
+<section class="max-w-7xl mx-auto w-full px-space-md lg:px-margin-desktop pb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-gutter-desktop">
+<!-- FOTO 1: Span 4, Arch top, Interior https://lh3.googleusercontent.com/aida/AEtjO1XZlGFKAOzKJvZIK3OUuivSS-18gg_QpGMGqc6yi9VpepGVWmZig1_NTKTGY0kTU0Gnszvq-zBdmNgnOd7WxLJN9dmY1yyT8V8HK7liMclWSUJmq5ExSg2lfcwQbkm-hGCevBar6A0t-ibBbCs5IUUvdWy4MZiAh-Rl2wc-wH3x1DLrpe-W9dH5HLSS2jpzA6dW0UFf9Cxga6iiDqeR-keDC4RL7hOUEJPcBs-Zu2waQA -->
+<article class="md:col-span-3 lg:col-span-4 group flex flex-col bg-surface-container-low rounded-t-[140px] rounded-b-xl border border-primary-container/20 p-space-sm shadow-[4px_4px_0px_#12301f] transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#12301f]">
+<div class="relative w-full h-[380px] rounded-t-[130px] rounded-b-lg overflow-hidden border border-primary-container/10 bg-surface-container-highest">
+<img alt="Interior MŌRA Caféé Gandaria" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XZlGFKAOzKJvZIK3OUuivSS-18gg_QpGMGqc6yi9VpepGVWmZig1_NTKTGY0kTU0Gnszvq-zBdmNgnOd7WxLJN9dmY1yyT8V8HK7liMclWSUJmq5ExSg2lfcwQbkm-hGCevBar6A0t-ibBbCs5IUUvdWy4MZiAh-Rl2wc-wH3x1DLrpe-W9dH5HLSS2jpzA6dW0UFf9Cxga6iiDqeR-keDC4RL7hOUEJPcBs-Zu2waQA">
+<div class="absolute top-4 right-4 rotate-[-2.5deg] bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded border border-primary-container shadow-[2px_2px_0px_#12301f] font-label-code text-[11px] font-bold tracking-wider uppercase">
+            SUDUT FAVORIT NUGAS
+          </div>
+</div>
+<div class="pt-space-sm pb-1 flex flex-col justify-between flex-grow">
+<div class="space-y-1">
+<span class="font-label-code text-[11px] uppercase tracking-wider text-secondary font-semibold">[SELASAR UTARA]</span>
+<p class="font-body-md text-body-md text-primary font-medium">Meja Kayu &amp; Cahaya Pagi 09.00 WIB</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-primary-container/10 mt- space-xs">
+<span class="font-label-code text-[10px] text-on-surface-variant">Lensa 35mm · Suhu Hangat</span>
+<button class="font-label-code text-[11px] text-primary hover:text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform" type="button">
+              Buka Cerita ↗
+            </button>
+</div>
+</div>
+</article>
+<!-- FOTO 2: Span 4, Square rounded 16px, Mango Cheese Tea https://lh3.googleusercontent.com/aida/AEtjO1WHUuST-U05uJ0BFV_pQvJ29hnsTljxHiNCArFRd5pgRojp-mYUJnjT-nVhvLlV2KShdezMahpUGa5UlPTsDlfKVlaGr_antiuOs2B_tgIaWRcQICip2X9nAm-kXv6u_yD3ACxJyaBZPke859yo2F-NbrxrkNMXemkMeZzDReTd5S99muPwW_jAfFWHncKyg6a09MtbTjuYz2Htv5TwlKxgB7AFnG5-NvRaR71uWAc3HQ -->
+<article class="md:col-span-3 lg:col-span-4 group flex flex-col bg-surface-container-lowest rounded-xl border border-primary-container/20 p-space-sm shadow-[4px_4px_0px_#12301f] transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#12301f]">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden border border-primary-container/10 bg-surface-container-highest">
+<img alt="Mango Cheese Tea dingin batch seduh siang" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WHUuST-U05uJ0BFV_pQvJ29hnsTljxHiNCArFRd5pgRojp-mYUJnjT-nVhvLlV2KShdezMahpUGa5UlPTsDlfKVlaGr_antiuOs2B_tgIaWRcQICip2X9nAm-kXv6u_yD3ACxJyaBZPke859yo2F-NbrxrkNMXemkMeZzDReTd5S99muPwW_jAfFWHncKyg6a09MtbTjuYz2Htv5TwlKxgB7AFnG5-NvRaR71uWAc3HQ">
+<div class="absolute top-3 left-3 rotate-[2deg] bg-tertiary-container text-tertiary-fixed px-2.5 py-1 rounded border border-primary-container shadow-[2px_2px_0px_#12301f] font-label-code text-[11px] font-bold tracking-wider uppercase">
+            KRIM KEJU SIGNATURE
+          </div>
+</div>
+<div class="pt-space-sm pb-1 flex flex-col justify-between flex-grow">
+<div class="space-y-1">
+<span class="font-label-code text-[11px] uppercase tracking-wider text-secondary font-semibold">[RACIKAN ARTISAN]</span>
+<p class="font-body-md text-body-md text-primary font-medium">Mango Cheese Tea dingin batch seduh siang</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-primary-container/10 mt-space-xs">
+<span class="font-label-code text-[10px] text-on-surface-variant">Sea Salt Foam · Grade A Mango</span>
+<button class="font-label-code text-[11px] text-primary hover:text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform" type="button">
+              Buka Cerita ↗
+            </button>
+</div>
+</div>
+</article>
+<!-- FOTO 3: Span 4, Vertical Rectangular, Pelanggan Nugas (Inspiration Photo 1) -->
+<article class="md:col-span-6 lg:col-span-4 group flex flex-col bg-surface-container-low rounded-xl border border-primary-container/20 p-space-sm shadow-[4px_4px_0px_#12301f] transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#12301f]">
+<div class="relative w-full h-[380px] rounded-lg overflow-hidden border border-primary-container/10 bg-surface-container-highest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Warm candid photo of an Indonesian female university student in a terracotta rust knit sweater smiling brightly at a wooden cafe table with her laptop, notebook, and strawberry iced tea next to grand arched windows with lush greenery outside MŌRA café" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhNx-dBmBeoVq6NUSMbwY-oJMrX4HTNTe-zSjzLSdwPmyuIqlOJ-gHZWJxfilwRR0QKB9WYs9HED5Cy6ybHMkiL-wi5OGGQX8sWJwJns8Y8gXbgsqaVIiXGQV95avuaDZowrqvdbrfxWUgiZoI5SNj1lm_P-7xT-urKFOlEnFpvo4I4z2pswJ7ynjf28pfr-iNrcvzugR83YHrrWXRnE146yOCKvR3Df0sPTAufzEo">
+<div class="absolute top-4 right-3 rotate-[2.5deg] bg-primary-container text-primary-fixed px-2.5 py-1 rounded border border-primary-container shadow-[2px_2px_0px_#12301f] font-label-code text-[11px] font-bold tracking-wider uppercase">
+            PEJUANG SKRIPSI
+          </div>
+</div>
+<div class="pt-space-sm pb-1 flex flex-col justify-between flex-grow">
+<div class="space-y-1">
+<span class="font-label-code text-[11px] uppercase tracking-wider text-secondary font-semibold">[SUASANA KAWAN]</span>
+<p class="font-body-md text-body-md text-primary font-medium">Kawan Dinda menyelesaikan bab 4 ditemani Berry Tea</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-primary-container/10 mt-space-xs">
+<span class="font-label-code text-[10px] text-on-surface-variant">Meja Komunal Gandaria · 14.30 WIB</span>
+<button class="font-label-code text-[11px] text-primary hover:text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform" type="button">
+              Buka Cerita ↗
+            </button>
+</div>
+</div>
+</article>
+<!-- FOTO 4: Span 3, Oval / Circle Frame, Table Flatlay (Inspiration Photo 2) -->
+<article class="md:col-span-3 lg:col-span-3 group flex flex-col bg-surface-container-lowest rounded-xl border border-primary-container/20 p-space-sm shadow-[4px_4px_0px_#12301f] transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#12301f]">
+<div class="relative w-full aspect-square rounded-full overflow-hidden border border-primary-container/20 bg-surface-container-highest mx-auto max-w-[260px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Top-down flatlay shot of aesthetic iced matcha sea salt foam drink in a tall ribbed glass and iced berry cheese tea on an earthy natural oak cafe table next to an almond croissant and notebook in MŌRA cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKmyuFh-pj6FqbGIBYQKsoGt5R7RUTwvddleb0N55-cwjRvFsf6CLnKtk5N2oc5OGUorx4aQHp9HFtVeJ0kKvxGVcJf18IGcszQAmAbwLAiEXvoC3twkWv9kXTMz78IdxzCDF3MjyKT_1oyl3rC4zNEY4K11t2iN41WfB1WqV-7UftdWIBW8Ii2oC1W0_irM1184uZjjuMzjcFqirfVlLLMptbvR53mp_VHs-BZRbw">
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 rotate-[-2deg] bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded border border-primary-container shadow-[2px_2px_0px_#12301f] font-label-code text-[10px] font-bold tracking-wider uppercase whitespace-nowrap">
+            DUO SEDUHAN
+          </div>
+</div>
+<div class="pt-space-md pb-1 flex flex-col justify-between flex-grow text-center">
+<div class="space-y-1">
+<span class="font-label-code text-[11px] uppercase tracking-wider text-secondary font-semibold">[TABLETOP ARCHIVE]</span>
+<p class="font-body-md text-body-md text-primary font-medium">Matcha Sea Salt &amp; Berry Foam di meja kayu</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-primary-container/10 mt-space-xs">
+<span class="font-label-code text-[10px] text-on-surface-variant">Natural Light · 11:15 WIB</span>
+<button class="font-label-code text-[11px] text-primary hover:text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform" type="button">
+              Buka Cerita ↗
+            </button>
+</div>
+</div>
+</article>
+<!-- FOTO 5: Span 5, Wide Landscape, Ice Latte Single Origin https://lh3.googleusercontent.com/aida/AEtjO1Xe4WkBLFR-bpNJI-fJlUqkljoZ-RXGW1L64gCmJTC5ovxr0KUx-8qD3nbK0NbsoOzriLCRYr1nmYyq6XS9YHTTktSq8tskNU3Zodmvae1_poWM_4aqHU1HvNvHX9DkgOv6YxETlCGe5oFizwS_6PrcLDIqZefyzKHXNjT4Xq-0Cz-2aKpssKdRDeiy3rLTh61XIAZenrTiET7HsKhOANo3VZ4FDXx3bxkOC83vSlVV_Q -->
+<article class="md:col-span-3 lg:col-span-5 group flex flex-col bg-surface-container-lowest rounded-xl border border-primary-container/20 p-space-sm shadow-[4px_4px_0px_#12301f] transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#12301f]">
+<div class="relative w-full h-[260px] rounded-lg overflow-hidden border border-primary-container/10 bg-surface-container-highest">
+<img alt="Ice Latte oat milk dengan lapisan espresso dingin" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1Xe4WkBLFR-bpNJI-fJlUqkljoZ-RXGW1L64gCmJTC5ovxr0KUx-8qD3nbK0NbsoOzriLCRYr1nmYyq6XS9YHTTktSq8tskNU3Zodmvae1_poWM_4aqHU1HvNvHX9DkgOv6YxETlCGe5oFizwS_6PrcLDIqZefyzKHXNjT4Xq-0Cz-2aKpssKdRDeiy3rLTh61XIAZenrTiET7HsKhOANo3VZ4FDXx3bxkOC83vSlVV_Q">
+<div class="absolute top-3 right-3 rotate-[1.5deg] bg-secondary text-on-secondary px-2.5 py-1 rounded border border-primary-container shadow-[2px_2px_0px_#12301f] font-label-code text-[11px] font-bold tracking-wider uppercase">
+            SINGLE ORIGIN GARUT
+          </div>
+</div>
+<div class="pt-space-sm pb-1 flex flex-col justify-between flex-grow">
+<div class="space-y-1">
+<span class="font-label-code text-[11px] uppercase tracking-wider text-secondary font-semibold">[KEDAI SPECIALTY]</span>
+<p class="font-body-md text-body-md text-primary font-medium">Ice Latte oat milk dengan lapisan espresso dingin</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-primary-container/10 mt-space-xs">
+<span class="font-label-code text-[10px] text-on-surface-variant">Arabica Full Wash · Creamy Oatside</span>
+<button class="font-label-code text-[11px] text-primary hover:text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform" type="button">
+              Buka Cerita ↗
+            </button>
+</div>
+</div>
+</article>
+<!-- FOTO 6: Span 4, Vertical with Arch Top, Strawberry Cheese Tea https://lh3.googleusercontent.com/aida/AEtjO1UISXIwzTl3N6M_iBLFSz_aW9LdVl5mTBvqTWs9x0KktGz1YCjpvvvypqdUGS6wOIPZ6i4ZsJKTPbeLVOoCPMUZ1S2EM4AX3plBnloX2aZb3PcoNy39qs4GA7HJTLE9_jmIaZtADVNNOuzVNIZbXSe3tZO0H4ByW3ovH_DyYJrq1gvcRrrBdcw2COeKNsfTTq2-qUpNu_8u4EYAImKNIk8jMfcBNOE9Pol-R0ZYWUwIqA -->
+<article class="md:col-span-6 lg:col-span-4 group flex flex-col bg-surface-container-low rounded-t-[100px] rounded-b-xl border border-primary-container/20 p-space-sm shadow-[4px_4px_0px_#12301f] transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#12301f]">
+<div class="relative w-full h-[260px] rounded-t-[90px] rounded-b-lg overflow-hidden border border-primary-container/10 bg-surface-container-highest">
+<img alt="Strawberry Cheese Tea racikan barista Mas Rizal" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UISXIwzTl3N6M_iBLFSz_aW9LdVl5mTBvqTWs9x0KktGz1YCjpvvvypqdUGS6wOIPZ6i4ZsJKTPbeLVOoCPMUZ1S2EM4AX3plBnloX2aZb3PcoNy39qs4GA7HJTLE9_jmIaZtADVNNOuzVNIZbXSe3tZO0H4ByW3ovH_DyYJrq1gvcRrrBdcw2COeKNsfTTq2-qUpNu_8u4EYAImKNIk8jMfcBNOE9Pol-R0ZYWUwIqA">
+<div class="absolute bottom-3 left-3 rotate-[-1.5deg] bg-tertiary-fixed-dim text-on-tertiary-container px-2.5 py-1 rounded border border-primary-container shadow-[2px_2px_0px_#12301f] font-label-code text-[11px] font-bold tracking-wider uppercase">
+            MANIS SEGAR CIWIDEY
+          </div>
+</div>
+<div class="pt-space-sm pb-1 flex flex-col justify-between flex-grow">
+<div class="space-y-1">
+<span class="font-label-code text-[11px] uppercase tracking-wider text-secondary font-semibold">[SEASONAL HARVEST]</span>
+<p class="font-body-md text-body-md text-primary font-medium">Strawberry Cheese Tea racikan barista Mas Rizal</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-primary-container/10 mt-space-xs">
+<span class="font-label-code text-[10px] text-on-surface-variant">Buah Asli Ciwidey · Cream Foam Tebal</span>
+<button class="font-label-code text-[11px] text-primary hover:text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform" type="button">
+              Buka Cerita ↗
+            </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 4: DINDING TESTIMONI (STICKY ROTATED RETRO NOTES) -->
+<section class="max-w-7xl mx-auto w-full px-space-md lg:px-margin-desktop py-space-xl border-t border-primary-container/15">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div class="space-y-1">
+<span class="font-label-code text-label-code uppercase tracking-widest text-secondary font-semibold">
+          09.2 — DINDING SUARA KAWAN · DITULIS DENGAN HANGAT DI MEJA KEDAI
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-semibold">
+          Catatan Kecil dari Mereka yang Singgah
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Terima kasih telah menjadikan MŌRA rumah kedua untuk berproses, berdiskusi santai, atau sekadar melepas lelah sore hari.
+      </p>
+</div>
+<!-- 4 STICKY ROTATED NOTES -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop pt-space-sm">
+<!-- Kartu 1: Bagus Wicaksono (-1.5deg) -->
+<div class="relative bg-[#faf7ef] text-primary border border-primary-container/20 rounded p-space-md shadow-[4px_4px_0px_#12301f] transition-transform hover:rotate-0 duration-300 transform -rotate-[1.5deg] flex flex-col justify-between min-h-[300px]">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-4 bg-secondary-container/60 border border-primary-container/20 backdrop-blur-sm -rotate-2"></div>
+<div>
+<div class="flex items-center gap-1 text-secondary mb- space-sm">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-sm text-[17px] leading-snug italic text-on-surface font-normal">
+            “Tempat paling hening buat nulis tesis. Stopkontaknya nggak pelit, wifinya 100 Mbps beneran kencang, dan Matcha Sea Salt-nya bikin nggak pusing pas revisi.”
+          </blockquote>
+</div>
+<div class="pt-space-md border-t border-primary-container/10 mt-space-md">
+<p class="font-headline-sm text-[16px] font-semibold text-primary">Bagus Wicaksono</p>
+<span class="font-label-code text-[10px] uppercase text-on-surface-variant tracking-wider">[MAHASISWA MAGISTER ARSITEKTUR UI]</span>
+</div>
+</div>
+<!-- Kartu 2: Nabila Saraswati (+1.2deg) -->
+<div class="relative bg-[#f1f6ef] text-primary border border-primary-container/20 rounded p-space-md shadow-[4px_4px_0px_#12301f] transition-transform hover:rotate-0 duration-300 transform rotate-[1.2deg] flex flex-col justify-between min-h-[300px]">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-4 bg-primary-fixed/60 border border-primary-container/20 backdrop-blur-sm rotate-1"></div>
+<div>
+<div class="flex items-center gap-1 text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-sm text-[17px] leading-snug italic text-on-surface font-normal">
+            “Krim kejunya bukan kaleng-kaleng. Asin gurihnya pas dan mangganya terasa buah asli bukan sirup pekat. Setiap sore pulang ngantor pasti mampir ke pelataran selasar.”
+          </blockquote>
+</div>
+<div class="pt-space-md border-t border-primary-container/10 mt-space-md">
+<p class="font-headline-sm text-[16px] font-semibold text-primary">Nabila Saraswati</p>
+<span class="font-label-code text-[10px] uppercase text-on-surface-variant tracking-wider">[DESAINER GRAFIS &amp; FREELANCER]</span>
+</div>
+</div>
+<!-- Kartu 3: Farhan Maulana (-1deg) -->
+<div class="relative bg-[#faf7ef] text-primary border border-primary-container/20 rounded p-space-md shadow-[4px_4px_0px_#12301f] transition-transform hover:rotate-0 duration-300 transform -rotate-[1deg] flex flex-col justify-between min-h-[300px]">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-4 bg-secondary-fixed/70 border border-primary-container/20 backdrop-blur-sm -rotate-1"></div>
+<div>
+<div class="flex items-center gap-1 text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-sm text-[17px] leading-snug italic text-on-surface font-normal">
+            “Baristanya ramah banget, selalu ingat pesanan Ice Latte less sugar saya. Kursi kayunya ergonomis buat duduk berjam-jam tanpa pegal.”
+          </blockquote>
+</div>
+<div class="pt-space-md border-t border-primary-container/10 mt-space-md">
+<p class="font-headline-sm text-[16px] font-semibold text-primary">Farhan Maulana</p>
+<span class="font-label-code text-[10px] uppercase text-on-surface-variant tracking-wider">[ALUMNI &amp; CO-WORKING REGULER]</span>
+</div>
+</div>
+<!-- Kartu 4: Putri Anggraini (+1.5deg) -->
+<div class="relative bg-[#fcf9f2] text-primary border border-primary-container/20 rounded p-space-md shadow-[4px_4px_0px_#12301f] transition-transform hover:rotate-0 duration-300 transform rotate-[1.5deg] flex flex-col justify-between min-h-[300px]">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-4 bg-tertiary-fixed/60 border border-primary-container/20 backdrop-blur-sm rotate-2"></div>
+<div>
+<div class="flex items-center gap-1 text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-sm text-[17px] leading-snug italic text-on-surface font-normal">
+            “Harganya beneran ramah kantong mahasiswa tapi kualitas rasa setara kafe artisan specialty. Paket nugas Rp 35rb udah dapet roti bakar mantap.”
+          </blockquote>
+</div>
+<div class="pt-space-md border-t border-primary-container/10 mt-space-md">
+<p class="font-headline-sm text-[16px] font-semibold text-primary">Putri Anggraini</p>
+<span class="font-label-code text-[10px] uppercase text-on-surface-variant tracking-wider">[MAHASISWI ILMU KOMUNIKASI]</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: BAGIKAN MOMENMU CTA BANNER -->
+<section class="max-w-7xl mx-auto w-full px-space-md lg:px-margin-desktop pb-space-xl">
+<div class="w-full bg-primary-container text-on-primary rounded-xl border border-primary-container p-space-lg lg:p-space-xl shadow-[6px_6px_0px_#835400] relative overflow-hidden">
+<!-- Faint background grain / geometric line decoration -->
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full border border-primary-fixed/10 pointer-events-none"></div>
+<div class="absolute -right-32 -bottom-32 w-96 h-96 rounded-full border border-primary-fixed/5 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-xl">
+<!-- KIRI: Hasthtag & Socials -->
+<div class="max-w-xl space-y-space-md">
+<div class="space-y- space-sm">
+<span class="font-label-code text-[11px] uppercase tracking-widest text-secondary-container font-semibold">
+              KOLABORASI DIGITAL &amp; DINDING FISIK
+            </span>
+<h3 class="font-headline-lg text-headline-lg lg:text-[44px] text-primary-fixed font-semibold tracking-tight">
+              #SetiapTegukanMORA
+            </h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/90 leading-relaxed">
+              Abadikan cangkirmu, sudut nugasmu, atau senyum bersama teman satu mejamu. Tag akun kami dan dapatkan voucher kejutan tiap hari Jumat.
+            </p>
+</div>
+<!-- Social Media Pills -->
+<div class="flex flex-wrap items-center gap-space-sm pt-1">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary-fixed/30 hover:border-primary-fixed text-primary-fixed hover:bg-surface/10 transition-all font-label-code text-[11px] tracking-wider uppercase" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span class="">@mora_cafe1</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary-fixed/30 hover:border-primary-fixed text-primary-fixed hover:bg-surface/10 transition-all font-label-code text-[11px] tracking-wider uppercase" href="https://tiktok.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">play_circle</span>
+<span class="">@mora.cafe92</span>
+</a>
+</div>
+</div>
+<!-- KANAN: Action Buttons & Incentive Note -->
+<div class="flex flex-col sm:items-start lg:items-end gap-space-sm shrink-0">
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto">
+<button class="px-6 py-3.5 rounded-full bg-secondary-container text-on-secondary-container font-label-code text-label-code font-bold uppercase tracking-wider border border-primary shadow-[3px_3px_0px_#001b0c] hover:-translate-y-0.5 hover:shadow-[5px_5px_0px_#001b0c] active:translate-y-0 transition-all flex items-center justify-center gap-2" type="button">
+<span class="">Kirim Fotomu</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="px-6 py-3.5 rounded-full bg-transparent text-primary-fixed border-2 border-primary-fixed/40 hover:border-primary-fixed hover:bg-primary-fixed/10 font-label-code text-label-code font-semibold uppercase tracking-wider transition-all text-center" type="button">
+              Tulis Ulasan Meja
+            </button>
+</div>
+<div class="flex items-center gap-2 pt-2 text-primary-fixed-dim font-label-code text-[11px] tracking-wide">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">workspace_premium</span>
+<span class="">Foto terpilih akan dipajang di galeri dinding fisik kedai Gandaria &amp; mendapatkan 50 Poin MŌRA.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+
+
+
+
+<div id="snapdom-sandbox" data-snapdom-sandbox="true" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/features.js"></script>
+<script src="js/pages/galeri.js"></script>
+</body>
+</html>
